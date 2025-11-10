@@ -1,0 +1,53 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",//uncomment this if you want to use src folder
+    "outDir": "./dist",//uncomment this if you want to use dist folder
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    // "module": "nodenext",
+    "module": "NodeNext",
+    // "target": "esnext",
+    "target": "ES2020",
+    "types": [],
+    // For nodejs:
+    // "lib": ["esnext"],
+    "lib": ["ES2022"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+    "esModuleInterop":true,// To enable `import fs from 'fs'` syntax
+    "resolveJsonModule":true,// To enable `import data from './data.json'` syntax
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,// To speed up compilation
+    "allowSyntheticDefaultImports": true, // for compatibility with ES modules
+    "forceConsistentCasingInFileNames": true,// 
+  },
+  "include": ["src/**/*"],// to include/use src folder
+  "exclude": ["node_modules", "dist"]// to exclude node_modules
+}

@@ -69,3 +69,6 @@ Thumbs.db
 
 # Internal evaluation guides (uncomment to hide from candidates)
 # .internal/
+# Agregar al .gitignore
+echo ".env.prod" >> .gitignore
+echo ".env" >> .gitignore
